@@ -1,0 +1,10 @@
+{
+  "probe": "v2",
+  "coverage_invariant": true,
+  "writes": [
+    {"key": "k1", "value": "v1"},
+    {"key": "k2", "value": "v2", "crash_after_data": true},
+    {"key": "k3", "value": "v3"},
+    {"key": "k4", "value": "v2", "crash_after_data": true}
+  ]
+}
