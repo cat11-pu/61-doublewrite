@@ -15,6 +15,8 @@ ROUTES = {
     "/replay": lambda payload: ENGINE.replay(),
     "/reconcile": lambda payload: ENGINE.reconcile(),
     "/recover": lambda payload: ENGINE.recover(),
+    "/persist": lambda payload: ENGINE.persist(),
+    "/restore": lambda payload: ENGINE.restore(payload.get("blob")),
 }
 
 
